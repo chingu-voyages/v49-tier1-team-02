@@ -34,7 +34,7 @@ Everyone on your team should add their name along with a link to their GitHub
 your repo access and to practice PR'ing with your team *before* you start
 coding!
 
-- Tolulope Dada #1: [GitHub](https://github.com/EslamAbdElhakem) / [LinkedIn](https://www.linkedin.com/in/tolulopedada/))
+- Tolulope Dada #1: [GitHub](https://github.com/Tolulopedada) / [LinkedIn](https://www.linkedin.com/in/tolulopedada/))
 - Isaac Abodunrin: [GitHub](https://github.com/bytesandroses)
 
    ...
