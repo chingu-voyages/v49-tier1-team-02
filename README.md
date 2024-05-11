@@ -36,7 +36,7 @@ coding!
 
 - Tolulope Dada #1: [GitHub](https://github.com/Tolulopedada) / [LinkedIn](https://www.linkedin.com/in/tolulopedada/)
 - Isaac Abodunrin: [GitHub](https://github.com/bytesandroses)
-- Lithakazi (Litha):[GitHub](https://github.com/Lithakazi101) / [LinkedIn](www.linkedin.com/in/lithakazi-sikwana-061068225) 
+- Lithakazi (Litha):[GitHub](https://github.com/Lithakazi101) / [LinkedIn](linkedin.com/in/lithakazi-sikwana-061068225/) 
 
    ...
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
