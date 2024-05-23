@@ -1,3 +1,6 @@
+## Live Site
+[Link to live site] (https://chingu-voyages.github.io/v49-tier1-team-02/)
+
 # voyage-tasks
 
 Your project's `readme` is as important to success as your code. For 
@@ -29,7 +32,7 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 
 ## Our Team
 
-- Tolulope Dada #1: [GitHub](https://github.com/Tolulopedada) / [LinkedIn](https://www.linkedin.com/in/tolulopedada/)
+- Tolulope Dada: [GitHub](https://github.com/Tolulopedada) / [LinkedIn](https://www.linkedin.com/in/tolulopedada/)
 - Isaac Abodunrin:  [GitHub](https://github.com/bytesandroses)
 - Lithakazi (Litha):[GitHub](https://github.com/Lithakazi101) / [LinkedIn](linkedin.com/in/lithakazi-sikwana-061068225/) 
 - Eslam AbdElhakem: [GitHub](https://github.com/EslamAbdElhakem) / [LinkedIn](https://linkedin.com/in/EslamAbdElhakem)
