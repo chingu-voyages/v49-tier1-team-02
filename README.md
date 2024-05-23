@@ -13,7 +13,7 @@ in your `readme` feel free to replace the text we've provided here.
 
 > Own it & Make it your Own!
 
-## Team Documents
+## Team Document
 
 You may find these helpful as you work together to organize your project.
 
@@ -29,14 +29,7 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 
 ## Our Team
 
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team *before* you start
-coding!
-
 - Tolulope Dada #1: [GitHub](https://github.com/Tolulopedada) / [LinkedIn](https://www.linkedin.com/in/tolulopedada/)
-- Isaac Abodunrin: [GitHub](https://github.com/bytesandroses)
+- Isaac Abodunrin:  [GitHub](https://github.com/bytesandroses)
 - Lithakazi (Litha):[GitHub](https://github.com/Lithakazi101) / [LinkedIn](linkedin.com/in/lithakazi-sikwana-061068225/) 
-
-   ...
-- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Eslam AbdElhakem: [GitHub](https://github.com/EslamAbdElhakem) / [LinkedIn](https://linkedin.com/in/EslamAbdElhakem)
