@@ -1,5 +1,6 @@
 ## Live Site
-[Link to live site] (https://chingu-voyages.github.io/v49-tier1-team-02/)
+- [Github.io Link](https://chingu-voyages.github.io/v49-tier1-team-02/)
+- [Netlify Link](https://colorpickerv49.netlify.app/)
 
 # voyage-tasks
 
