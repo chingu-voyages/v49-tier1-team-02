@@ -1,3 +1,9 @@
 header-container {
     background-color: #f0f0f04b; /* Change this to your preferred color */
 }
+header-container logo{
+    float: left;
+}
+header-container links {
+    float: right;
+}
