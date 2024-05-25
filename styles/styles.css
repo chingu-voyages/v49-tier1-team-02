@@ -1,9 +1,10 @@
 header-container {
     background-color: #f0f0f04b; /* Change this to your preferred color */
 }
-header-container logo{
+.header-container .logo{
     float: left;
+    size: 50px;
 }
-header-container links {
+.header-container .links {
     float: right;
 }
