@@ -3,15 +3,31 @@ body{
     margin: 0;
     padding: 0;
 }
-.header-container {
-    background-color: #d9d9d9; /* Change this to your preferred color */
-    min-height: 100%;
+.header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    justify-content: space-between;
 }
-.header-container .logo{
-    float: left;
-    width: 70px;
-    height: 70px;
+header * {
+    display: inline;
 }
-.header-container .links {
-    float: right;
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+.header img {
+    height: 80px;
+    margin-left: 40px;
 }
