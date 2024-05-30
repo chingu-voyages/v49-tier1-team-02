@@ -33,6 +33,12 @@ header li a {
 /* container */
 .container{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 /* footer */
 footer{
