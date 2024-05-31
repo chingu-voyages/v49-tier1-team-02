@@ -13,3 +13,8 @@ colorPicker.on(["color:init", "color:change"], function
   rgbCode.innerHTML = ("RGB Code: " + color.rgbString);
   hexInput.value = color.hexString;
 });
+
+hexInput.addEventListener('change', function
+(color) {
+  colorPicker.color.hexString = this.value;
+});
