@@ -11,4 +11,5 @@ colorPicker.on(["color:init", "color:change"], function
 (color) {
   hexCode.innerHTML = ("HEX Code: " + color.hexString);
   rgbCode.innerHTML = ("RGB Code: " + color.rgbString);
+  hexInput.value = color.hexString;
 });
