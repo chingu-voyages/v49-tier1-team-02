@@ -13,7 +13,7 @@ colorPicker.on(["color:init", "color:change"], function
   hexCode.innerHTML = ("HEX Code: " + color.hexString);
   rgbCode.innerHTML = ("RGB Code: " + color.rgbString);
   hexInput.value = color.hexString;
-  colorPreview.style.backgroundColor = color.hexString
+  colorPreview.style.backgroundColor = color.hexString;
 });
 
 hexInput.addEventListener('change', function
