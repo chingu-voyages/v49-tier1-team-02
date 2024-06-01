@@ -42,6 +42,8 @@ header a {
 
 .container {
     margin-left: 100px;
+    width: 250px;
+    height: 200px;
 }
 
 #color-preview-box {
