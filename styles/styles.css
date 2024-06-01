@@ -35,9 +35,13 @@ header a {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     align-content: center;
+}
+
+.container {
+    margin-left: 100px;
 }
 
 #color-preview-box {
