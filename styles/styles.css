@@ -40,6 +40,12 @@ header a {
     align-content: center;
 }
 
+#color-preview-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
