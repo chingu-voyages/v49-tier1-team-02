@@ -1,6 +1,7 @@
 const hexCode = document.querySelector("#hex-code");
 const rgbCode = document.querySelector("#rgb-code");
 const hexInput = document.querySelector("#hexInput");
+const colorPreview = document.querySelector("#color-preview-box");
 
 const colorPicker = new iro.ColorPicker("#picker", {
   width: 150,
