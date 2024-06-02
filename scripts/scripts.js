@@ -1,6 +1,7 @@
 const hexCode = document.querySelector("#hex-code");
 const rgbCode = document.querySelector("#rgb-code");
 const hexInput = document.querySelector("#hexInput");
+const colorPreview = document.querySelector("#color-preview-box");
 
 const colorPicker = new iro.ColorPicker("#picker", {
   width: 150,
@@ -12,6 +13,7 @@ colorPicker.on(["color:init", "color:change"], function
   hexCode.innerHTML = ("HEX Code: " + color.hexString);
   rgbCode.innerHTML = ("RGB Code: " + color.rgbString);
   hexInput.value = color.hexString;
+  colorPreview.style.backgroundColor = color.hexString;
 });
 
 hexInput.addEventListener('change', function
