@@ -4,7 +4,7 @@ const colorPicker = new iro.ColorPicker("#picker", {
   colors: ["#f000",
           "#0f00",
           "#00f0",
-          "#000f",
+          "#0fff",
           "#ff00",
           "#f0f0",
           "#f00f",
