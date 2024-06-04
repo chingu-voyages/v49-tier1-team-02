@@ -14,7 +14,6 @@ const colorPicker = new iro.ColorPicker("#picker", {
 });
 
 const colorList = document.getElementById("colorList");
-const activeColor = document.getElementById("activeColor");
 
 function setColor(colorIndex) {
   // setActiveColor expects the color index!
@@ -51,12 +50,3 @@ hexInput.addEventListener('change', function
 (colors) {
   colorPicker.colors.hexString = this.value;
 });
-
-colorPicker.on(["mount", "color:setActive", "color:change"], function(){
-  // colorPicker.color is always the active color
-  const index = colorPicker.colors.index;
-  const hexString = colorPicker.colors.hexString;
-  activeColor.innerHTML = `
-    <div class="swatch" style="background: ${ hexString }"></div>
-  `;
-})
