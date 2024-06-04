@@ -39,7 +39,6 @@ colorPicker.on(["color:init", "color:change", "color:mount"], function
     colorList.innerHTML += `
       <li onClick="setColor(${ index })">
         <div class="swatch" style="background: ${ hexString }"></div>
-        <span>${ index }: ${ hexString }</span>
       </li>
     `;
   });
@@ -57,6 +56,5 @@ colorPicker.on(["mount", "color:setActive", "color:change"], function(){
   const hexString = colorPicker.colors.hexString;
   activeColor.innerHTML = `
     <div class="swatch" style="background: ${ hexString }"></div>
-    <span>${ index }: ${ hexString }</span>
   `;
 })
