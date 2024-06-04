@@ -1,13 +1,15 @@
 /* create a new color picker instance */
 const colorPicker = new iro.ColorPicker("#picker", {
   width: 150,
-  colors: ["#f00",
-          "#ff0",
-          "#0f0",
-          "#0ff",
-          "#00f",
-          "#f0f",
-          "#f00"
+  colors: ["#f000",
+          "#0f00",
+          "#00f0",
+          "#000f",
+          "#ff00",
+          "#f0f0",
+          "#f00f",
+          "#0ff0",
+          "#0f0f"
 ] 
 });
 
