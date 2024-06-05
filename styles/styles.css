@@ -85,21 +85,6 @@ main {
     }
   }
 
-
-#activeColor .swatch {
-  width: 120px;
-}
-
-.readout {
-  margin-top: 32px;
-  line-height: 180%;
-}
-
-#values {
- font-family: monospace;
-  line-height: 150%;
-}
-
 .link {
   margin-top: 16px;
   
