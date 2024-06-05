@@ -62,10 +62,6 @@ main {
     margin: 4px 0;
     border-radius: 4px;
   }
-.swatch {
-    border-radius: 0;
-    width: 50px;
-  }
   
   li {
     flex: 1;
