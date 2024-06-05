@@ -1,40 +1,28 @@
-/* create a new color picker instance */
-const colorPicker = new iro.ColorPicker("#picker", {
-  width: 150,
-  colors: ["#f000",
-          "#0f00",
-          "#00f0",
-          "#0fff",
-          "#ff00",
-          "#f0f0",
-          "#f00f",
-          "#0ff0",
-          "#0f0f"
-] 
-});
-
-const colorList = document.getElementById("colorList");
+const defaultColors = ["#f000", "#0f00", "#00f0", "#0fff", "#ff00", "#f0f0", "#f00f", "#0ff0", "#0f0f"];
 
 /* get the color picker's color */
 const hexCode = document.querySelector("#hex-code");
 const rgbCode = document.querySelector("#rgb-code");
 const hexInput = document.querySelector("#hexInput");
+const colorList = document.getElementById("colorList");
+
+/* create a new color picker instance */
+const colorPicker = new iro.ColorPicker("#picker", {
+  width: 150,
+  colors: defaultColors
+});
 
 /* set the color picker's color */
-colorPicker.on(["color:init", "color:change"], function 
-(colors) {
+colorPicker.on(["color:init", "color:change"], (colors) => {
   hexCode.innerHTML = ("HEX Code: " + colors.hexString);
   rgbCode.innerHTML = ("RGB Code: " + colors.rgbString);
   colorList.innerHTML = '';
   hexInput.value = colors.hexString;
   
-  
   colorPicker.colors.forEach(colors => {
-    const index = colors.index;
-    const hexString = colors.hexString;
     colorList.innerHTML += `
-      <li onClick="colorPicker.setActiveColor(${ index })">
-        <div class="swatch" style="background: ${ hexString }"></div>
+      <li>
+        <div class="swatch" style="background: ${ colors.hexString }"></div>
       </li>
     `;
   });
