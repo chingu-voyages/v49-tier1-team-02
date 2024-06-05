@@ -58,6 +58,10 @@ main {
     flex-wrap: wrap;
 }
 
+input {
+  width: 80px;
+}
+
 .swatch {
     height: 32px;
     margin: 4px 0;
