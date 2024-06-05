@@ -15,11 +15,6 @@ const colorPicker = new iro.ColorPicker("#picker", {
 
 const colorList = document.getElementById("colorList");
 
-function setColor(colorIndex) {
-  // setActiveColor expects the color index!
-  colorPicker.setActiveColor(colorIndex);
-}
-
 /* get the color picker's color */
 const hexCode = document.querySelector("#hex-code");
 const rgbCode = document.querySelector("#rgb-code");
@@ -38,7 +33,7 @@ colorPicker.on(["color:init", "color:change", "color:mount"], function
     const index = colors.index;
     const hexString = colors.hexString;
     colorList.innerHTML += `
-      <li onClick="setColor(${ index })">
+      <li onClick="colorPicker.setActiveColor(${ index })">
         <div class="swatch" style="background: ${ hexString }"></div>
       </li>
     `;
