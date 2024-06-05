@@ -67,6 +67,7 @@ main {
   }
 .swatch {
     border-radius: 0;
+    width: 150px;
   }
   
   li {
