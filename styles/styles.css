@@ -42,7 +42,7 @@ main {
 
 .container {
     margin-left: 100px;
-    width: 250px;
+    width: 1000px;
     height: 200px;
     display: flex;
 }
