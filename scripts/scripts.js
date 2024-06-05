@@ -14,7 +14,6 @@ const colorPicker = new iro.ColorPicker("#picker", {
 
 /* set the color picker's color */
 colorPicker.on(["color:init", "color:change"], (colors) => {
-  hexCode.innerHTML = ("HEX Code: " + colors.hexString);
   rgbCode.innerHTML = ("RGB Code: " + colors.rgbString);
   colorList.innerHTML = '';
   hexInput.value = colors.hexString;
