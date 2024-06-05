@@ -83,6 +83,10 @@ li:last-child {
   }
 }
 
+#color-codes {
+  display: flex;
+}
+
 .link {
   margin-top: 16px;
   
