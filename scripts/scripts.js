@@ -7,7 +7,6 @@ const colorPicker = new iro.ColorPicker("#picker", {
           "#0ff",
           "#00f",
           "#f0f",
-          "#f00"
 ] 
 });
 
@@ -34,7 +33,7 @@ colorPicker.on(["color:init", "color:change", "color:mount"], function
   
   
   colorPicker.colors.forEach(colors => {
-    const index = colors.index;
+    const index = colors.index + 1;
     const hexString = colors.hexString;
     colorList.innerHTML += `
       <li onClick="setColor(${ index })">

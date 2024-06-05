@@ -57,9 +57,24 @@ main {
     margin: 0;
     margin-bottom: 12px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
 }
+
+.wrap {
+    min-height: 100vh;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    .half {
+      width: 50%;
+      padding: 32px 0;
+    }
+  }
+
 .swatch {
     height: 32px;
     margin: 4px 0;
@@ -89,7 +104,7 @@ main {
 
 
 #activeColor .swatch {
-  width: 120px;
+  width: 600px;
 }
 
 .readout {
