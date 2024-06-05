@@ -41,9 +41,9 @@ main {
 }
 
 .container {
-    margin-left: 100px;
-    width: 250px;
+    width: 500px;
     height: 200px;
+    text-align:  -webkit-center;
 }
 
 #color-preview-box {
