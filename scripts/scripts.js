@@ -21,7 +21,7 @@ const rgbCode = document.querySelector("#rgb-code");
 const hexInput = document.querySelector("#hexInput");
 
 /* set the color picker's color */
-colorPicker.on(["color:init", "color:change", "color:mount"], function 
+colorPicker.on(["color:init", "color:change"], function 
 (colors) {
   hexCode.innerHTML = ("HEX Code: " + colors.hexString);
   rgbCode.innerHTML = ("RGB Code: " + colors.rgbString);
