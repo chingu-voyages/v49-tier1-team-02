@@ -32,10 +32,10 @@ colorPicker.on(["color:init", "color:change"], (colors) => {
 /* change the color picker's color */
 hexInput.addEventListener('change', function
 (colors) {
-  colorPicker.colors.hexString = this.value;
+  colorPicker.color.hexString = this.value;
 });
 
 rgbInput.addEventListener('change', function
 (colors) {
-  colorPicker.colors.rgbString = this.value;
+  colorPicker.color.rgbString = this.value;
 });
