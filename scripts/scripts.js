@@ -1,7 +1,7 @@
 /* groq-sdk is a JavaScript client library for the Groq API. */
 import Groq from "groq-sdk";
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+const groq = new Groq({ apiKey: process.env.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 });
 
 export async function main() {
   const chatCompletion = await getGroqChatCompletion();
