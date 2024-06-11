@@ -10,7 +10,8 @@ const colorList = document.getElementById("colorList");
 /* create a new color picker instance */
 const colorPicker = new iro.ColorPicker("#picker", {
   width: 150,
-  colors: defaultColors
+  colors: defaultColors,
+  layoutDirection: 'horizontal'
 });
 
 /* set the color picker's color */
