@@ -1,8 +1,6 @@
 const defaultColors = ["#f000", "#0f00", "#00f0", "#0fff", "#ff00", "#f0f0", "#f00f", "#0ff0", "#0f0f"];
 
 /* get the color picker's color */
-const hexCode = document.querySelector("#hex-code");
-const rgbCode = document.querySelector("#rgb-code");
 const hexInput = document.querySelector("#hexInput");
 const rgbInput = document.querySelector("#rgbInput");
 const colorList = document.getElementById("colorList");
