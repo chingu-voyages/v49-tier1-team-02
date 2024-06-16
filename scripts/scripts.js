@@ -59,3 +59,45 @@ colorPicker.on(["mount", "color:setActive", "color:change"], function(){
     <span>${ index }: ${ hexString }</span>
   `;
 })
+
+// groq api suggestion
+
+let userHexcode = 0;
+// Get the color harmony
+function getColorHarmony(){
+  if (colorPicker.colors.length != 0) {
+    colorPicker.colors = [colorPicker.colors[0]];
+  }
+
+userHexcode = hexInput.value;
+
+}
+
+async function groqQurey() {
+  let systemPrompt = "You are an expert on color harmony.  include base color as part of the suggestion. Do not give any explanation. Use space to separate suggestions"
+  let userPrompt =  `base color: ${userHexcode}. Hex Code only.`;
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      messsages: [
+        {
+          role: 'system',
+          content: systemPrompt,
+        },
+        {
+          role: 'user',
+          content: userPrompt,
+        },
+      ],
+      temperature: 0.6,
+      model: "llama3-70b-8192",
+      max_tokens: 30,
+    }),
+});
+
+}
