@@ -69,13 +69,18 @@ function getColorHarmony(){
     colorPicker.colors = [colorPicker.colors[0]];
   }
 
+  groqQurey(userHexcode);
+
 userHexcode = hexInput.value;
 
 }
 
-async function groqQurey() {
+async function groqQurey(userHexcode) {
   let systemPrompt = "You are an expert on color harmony.  include base color as part of the suggestion. Do not give any explanation. Use space to separate suggestions"
   let userPrompt =  `base color: ${userHexcode}. Hex Code only.`;
+
+  const url = 'https://api.groq.com/openai/v1/chat/completions';
+  const apiKey = 'sk-1e0e4b7b-3b4d-4b7b-8d0e-7b3b4d4b7b8d';
 
   const response = await fetch(url, {
     method: 'POST',
@@ -100,4 +105,14 @@ async function groqQurey() {
     }),
 });
 
+const groqResponse = await response.json();
+
+const colorSuggestions = groqResponse.choices[0].message.content;
+
+let suggestions = colorSuggestions.split(" ");
+
+for (let i = 0; i < suggestions.length; i++) {
+  let suggestion = suggestions[i];
+  colorPicker.addColor(suggestion);
+  }
 }
