@@ -1,42 +1,131 @@
-body{
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-/* Header */
-header{
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+
+header {
     height: 80px;
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 black;
     justify-content: space-between;
 }
+
 header * {
     display: inline;
 }
+
 header li {
     margin: 20px;
 }
-header li a {
+
+header a {
     color: black;
     text-decoration: none;
 }
+
 .header img {
     height: 80px;
     margin-left: 40px;
 }
-/* container */
-.container{
-    height: 100vh;
+/* main */
+main {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    width: 500px;
+    height: 200px;
+    text-align:  -webkit-center;
+}
+
+#color-preview-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+#colorList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap {
+    min-height: 100vh;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    .half {
+      width: 50%;
+      padding: 32px 0;
+    }
+  }
+
+.swatch {
+    height: 32px;
+    margin: 4px 0;
+    border-radius: 4px;
+  }
+.swatch {
+    border-radius: 0;
+  }
+  
+  li {
+    flex: 1;
+  }
+  
+  li:first-child {
+    .swatch{
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+  
+  li:last-child {
+    .swatch{
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+
+
+#activeColor .swatch {
+  width: 600px;
+}
+
+.readout {
+  margin-top: 32px;
+  line-height: 180%;
+}
+
+#values {
+ font-family: monospace;
+  line-height: 150%;
+}
+
+.link {
+  margin-top: 16px;
+  
+a {
+    color: MediumSlateBlue;
+  }
 }
 /* footer */
-footer{
-    background-color: white;
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -47,20 +136,25 @@ footer{
     box-shadow: 0 0 25px 0 black;
     justify-content: space-between;
 }
-footer h3{
+
+footer h3 {
     margin-left: 40px;
 }
+
 footer * {
     display: inline;
 }
-footer-content{
+
+footer-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 footer li {
     margin: 20px;
 }
+
 footer li img {
     height: 40px;
 }
