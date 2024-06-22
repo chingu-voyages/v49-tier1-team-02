@@ -37,3 +37,30 @@ rgbInput.addEventListener('change', function
 (colors) {
   colorPicker.color.rgbString = this.value;
 });
+
+
+function recommendColor() {
+  const colorPrompt = "Please suggest colors that match with #ff0000";
+
+  fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer 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'
+    },
+    body: JSON.stringify({
+      messages: [
+        {
+          role: "user",
+          content: colorPrompt,
+        },
+      ],
+      model: "llama3-8b-8192"
+    })
+  })
+  .then(response => response.json())
+  .then(data => console.log(data.choices[0].message.content))
+  .catch(error => console.error(error));
+}
+
+recommendColor();
