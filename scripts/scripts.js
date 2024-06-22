@@ -40,7 +40,7 @@ rgbInput.addEventListener('change', function
 
 
 async function recommendColor() { 
-  const colorPrompt = "Please suggest colors that match with #ff0000"; 
+  const colorPrompt = "Please suggest 5 colors that match with #ff0000. Please return only the hex codes, without any other texts"; 
 
   try {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -58,9 +58,10 @@ async function recommendColor() {
     });
 
     const data = await response.json(); 
-    const suggestedColorsMessage = data.choices[0].message.content; 
+    const suggestedColorsResponse = data.choices[0].message.content; 
+//    console.log(suggestedColorsResponse);
 
-    return suggestedColorsMessage; 
+    return suggestedColorsResponse; 
 
   } catch (error) {
     return error; 
