@@ -58,14 +58,25 @@ async function recommendColor() {
     });
 
     const data = await response.json(); 
-    const suggestedColorsResponse = data.choices[0].message.content; 
-//    console.log(suggestedColorsResponse);
-
-    return suggestedColorsResponse; 
+    const colorsResponse = data.choices[0].message.content; 
+    const suggestedColorArray = getHexCodes(colorsResponse);
+    return suggestedColorArray; 
 
   } catch (error) {
     return error; 
   }
+}
+
+function getHexCodes(colorMessage) {
+  const hexCodes = [];
+  for (let index = 0; index < colorMessage.length; index++) {
+    const character = colorMessage[index];
+    if (character === "#") {
+      const singleColorCode = colorMessage.slice(index, index + 7);
+      hexCodes.push(singleColorCode);
+    }
+  }
+  return hexCodes;
 }
 
 recommendColor();
